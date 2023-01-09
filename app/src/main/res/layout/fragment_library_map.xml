@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.library.LibraryMapFragment"
+    android:orientation="vertical">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        tools:ignore="InvalidId" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:rowCount="1"
+        app:columnCount="2">
+
+        <TextView
+            android:id="@+id/libraryName"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Library Name:"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/libraryNameValue"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Laptop Type:"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/campusName"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Campus Name:"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/campusNameValue"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Laptop Type:"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timmings"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Timming:"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/timmingsValue"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Laptop Type:"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/postalCode"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Postal Code:"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/postalCodeValue"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Laptop Type:"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/googleMapsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Google Maps"
+        android:textSize="12sp"
+        app:layout_column="0"
+        app:layout_gravity="fill_horizontal" />
+
+    <Button
+        android:id="@+id/eventsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Events"
+        android:textSize="12sp"
+        app:layout_column="0"
+        app:layout_gravity="fill_horizontal" />
+
+
+</LinearLayout>

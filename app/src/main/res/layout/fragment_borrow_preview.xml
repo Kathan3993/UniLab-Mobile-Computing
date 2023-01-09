@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BorrowPreviewActivity">
+
+    <GridLayout
+        android:rowCount="1"
+        android:columnCount="2"
+        android:background="#EAEBF1"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:text="First Name:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewPreviewFirstNameVal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="35dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Last Name:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLastNameVal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewStreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Apt / Street #:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewStreetVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="City / Town:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewCityVal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Province / State:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewStateVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewPostal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Postal Code:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewPostalVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Phone Number:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewPhoneNumberVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Email:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewEmailVal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLaptopType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Laptop Type:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLaptopTypeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewConfiguration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Configuration:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewConfigurationVal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLoanType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Loan type:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLoanTypeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Library:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLibraryVal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonBorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_weight="1"
+            android:text="Borrow" />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="#878480"
+            android:text="Edit" />
+
+    </GridLayout>
+
+</ScrollView>

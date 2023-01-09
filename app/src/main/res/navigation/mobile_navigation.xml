@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mobilecomputingproject.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_laptopBorrowingFragment"
+            app:destination="@id/laptopBorrowingFragment"
+            />
+        <action
+            android:id="@+id/action_navigation_home_to_libraryListFragment"
+            app:destination="@id/libraryListFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_roomBookingHomeFragment"
+            app:destination="@id/roomBookingHomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.mobilecomputingproject.ui.qr.QRFragment"
+        android:label="@string/title_qr"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_navigation_notifications_to_qrCheckInSucessFragment"
+            app:destination="@id/qrCheckInSucessFragment" />
+        <action
+            android:id="@+id/action_navigation_notifications_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.mobilecomputingproject.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_updatePassword"
+            app:destination="@id/updatePassword" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/laptopBorrowingFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.LaptopBorrowingFragment"
+        android:label="Laptop Borrowing"
+        tools:layout="@layout/fragment_laptop_borrowing" >
+        <action
+            android:id="@+id/action_laptopBorrowingFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_laptopBorrowingFragment_to_searchAvailableLaptopsFragment"
+            app:destination="@id/searchAvailableLaptopsFragment" />
+        <action
+            android:id="@+id/action_laptopBorrowingFragment_to_searchLaptopsFragment"
+            app:destination="@id/searchLaptopsFragment" />
+        <action
+            android:id="@+id/action_laptopBorrowingFragment_to_devicesFragment"
+            app:destination="@id/devicesFragment" />
+        <action
+            android:id="@+id/action_laptopBorrowingFragment_to_borrowRequestsFragment"
+            app:destination="@id/borrowRequestsFragment" />
+        <action
+            android:id="@+id/action_laptopBorrowingFragment_to_navigation_home2"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchAvailableLaptopsFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.SearchAvailableLaptopsFragment"
+        android:label="Search Available Laptops"
+        tools:layout="@layout/fragment_search_available_laptops" >
+        <action
+            android:id="@+id/action_searchAvailableLaptopsFragment_to_laptopBorrowingFragment"
+            app:destination="@id/laptopBorrowingFragment" />
+        <action
+            android:id="@+id/action_searchAvailableLaptopsFragment_to_availableLaptopsFragment"
+            app:destination="@id/availableLaptopsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchLaptopsFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.SearchLaptopsFragment"
+        android:label="Search Laptops"
+        tools:layout="@layout/fragment_search_laptops" >
+        <action
+            android:id="@+id/action_searchLaptopsFragment_to_laptopBorrowingFragment"
+            app:destination="@id/laptopBorrowingFragment" />
+        <action
+            android:id="@+id/action_searchLaptopsFragment_to_laptopsFragment"
+            app:destination="@id/laptopsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/laptopsFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.LaptopsFragment"
+        android:label="Laptops"
+        tools:layout="@layout/fragment_laptops" >
+        <action
+            android:id="@+id/action_laptopsFragment_to_searchLaptopsFragment"
+            app:destination="@id/searchLaptopsFragment" />
+   </fragment>
+    <fragment
+        android:id="@+id/devicesFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.DevicesFragment"
+        android:label="Devices"
+        tools:layout="@layout/fragment_devices" >
+        <action
+            android:id="@+id/action_devicesFragment_to_laptopBorrowingFragment"
+            app:destination="@id/laptopBorrowingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/borrowRequestsFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.BorrowRequestsFragment"
+        android:label="Borrow Requests"
+        tools:layout="@layout/fragment_borrow_requests" >
+        <action
+            android:id="@+id/action_borrowRequestsFragment_to_laptopBorrowingFragment"
+            app:destination="@id/laptopBorrowingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/availableLaptopsFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.AvailableLaptopsFragment"
+        android:label="Available Laptops"
+        tools:layout="@layout/fragment_available_laptops" >
+        <action
+            android:id="@+id/action_availableLaptopsFragment_to_searchAvailableLaptopsFragment"
+            app:destination="@id/searchAvailableLaptopsFragment" />
+        <action
+            android:id="@+id/action_availableLaptopsFragment_to_borrowDetailsFragment"
+            app:destination="@id/borrowDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/borrowDetailsFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.BorrowDetailsFragment"
+        android:label="Borrow Details"
+        tools:layout="@layout/fragment_borrow_details" >
+        <action
+            android:id="@+id/action_borrowDetailsFragment_to_availableLaptopsFragment"
+            app:destination="@id/availableLaptopsFragment" />
+        <action
+            android:id="@+id/action_borrowDetailsFragment_to_borrowPreviewFragment"
+            app:destination="@id/borrowPreviewFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/termsAndConditionsBottomSheetFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.TermsAndConditionsBottomSheetFragment"
+        android:label="TermsAndConditionsBottomSheetFragment" >
+    </dialog>
+    <fragment
+        android:id="@+id/borrowPreviewFragment"
+        android:name="com.example.mobilecomputingproject.ui.laptop_borrowing.BorrowPreviewFragment"
+        android:label="Borrow Preview" >
+        <action
+            android:id="@+id/action_borrowPreviewFragment_to_borrowDetailsFragment"
+            app:destination="@id/borrowDetailsFragment" />
+        <action
+            android:id="@+id/action_borrowPreviewFragment_to_laptopBorrowingFragment"
+            app:destination="@id/laptopBorrowingFragment" />
+        <action
+            android:id="@+id/action_borrowPreviewFragment_to_borrowRequestsFragment"
+            app:destination="@id/borrowRequestsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryListFragment"
+        android:name="com.example.mobilecomputingproject.ui.library.LibraryListFragment"
+        android:label="Libraries"
+        tools:layout="@layout/fragment_library_list" >
+        <action
+            android:id="@+id/action_libraryListFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_libraryListFragment_to_libraryMapFragment"
+            app:destination="@id/libraryMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryMapFragment"
+        android:name="com.example.mobilecomputingproject.ui.library.LibraryMapFragment"
+        android:label="Library Map"
+        tools:layout="@layout/fragment_library_map" >
+        <action
+            android:id="@+id/action_libraryMapFragment_to_libraryFeedFragment"
+            app:destination="@id/libraryFeedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryFeedFragment"
+        android:name="com.example.mobilecomputingproject.ui.library.LibraryFeedFragment"
+        android:label="Library Feed"
+        tools:layout="@layout/fragment_library_feed" >
+        <action
+            android:id="@+id/action_libraryFeedFragment_to_libraryMapFragment"
+            app:destination="@id/libraryMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomBookingHomeFragment"
+        android:name="com.example.mobilecomputingproject.ui.room_booking.RoomBookingHomeFragment"
+        android:label="Room Booking"
+        tools:layout="@layout/fragment_room_booking_home" >
+        <action
+            android:id="@+id/action_roomBookingHomeFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_roomBookingHomeFragment_to_pastRoomBookingFragment"
+            app:destination="@id/pastRoomBookingFragment" />
+        <action
+            android:id="@+id/action_roomBookingHomeFragment_to_futureRoomBookingFragment"
+            app:destination="@id/futureRoomBookingFragment" />
+        <action
+            android:id="@+id/action_roomBookingHomeFragment_to_searchRoomsFragment"
+            app:destination="@id/searchRoomsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pastRoomBookingFragment"
+        android:name="com.example.mobilecomputingproject.ui.room_booking.PastRoomBookingFragment"
+        android:label="Past Room Bookings"
+        tools:layout="@layout/fragment_past_room_booking" >
+        <action
+            android:id="@+id/action_pastRoomBookingFragment_to_roomBookingHomeFragment"
+            app:destination="@id/roomBookingHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePassword"
+        android:name="com.example.mobilecomputingproject.ui.profile.UpdatePassword"
+        android:label="Update Password"
+        tools:layout="@layout/fragment_update_password" >
+        <action
+            android:id="@+id/action_updatePassword_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/futureRoomBookingFragment"
+        android:name="com.example.mobilecomputingproject.ui.room_booking.FutureRoomBookingFragment"
+        android:label="Future Bookings"
+        tools:layout="@layout/fragment_future_room_booking" >
+        <action
+            android:id="@+id/action_futureRoomBookingFragment_to_roomBookingHomeFragment"
+            app:destination="@id/roomBookingHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchRoomsFragment"
+        android:name="com.example.mobilecomputingproject.ui.room_booking.SearchRoomsFragment"
+        android:label="Search Rooms"
+        tools:layout="@layout/fragment_search_rooms" >
+        <action
+            android:id="@+id/action_searchRoomsFragment_to_roomBookingHomeFragment"
+            app:destination="@id/roomBookingHomeFragment" />
+        <action
+            android:id="@+id/action_searchRoomsFragment_to_roomsFragment"
+            app:destination="@id/roomsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomsFragment"
+        android:name="com.example.mobilecomputingproject.ui.room_booking.RoomsFragment"
+        android:label="Available Rooms"
+        tools:layout="@layout/fragment_rooms" >
+        <action
+            android:id="@+id/action_roomsFragment_to_searchRoomsFragment"
+            app:destination="@id/searchRoomsFragment" />
+        <action
+            android:id="@+id/action_roomsFragment_to_roomFormFragment"
+            app:destination="@id/roomFormFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomFormFragment"
+        android:name="com.example.mobilecomputingproject.ui.room_booking.RoomFormFragment"
+        android:label="Enter Details"
+        tools:layout="@layout/fragment_room_form" >
+        <action
+            android:id="@+id/action_roomFormFragment_to_roomsFragment"
+            app:destination="@id/roomsFragment" />
+        <action
+            android:id="@+id/action_roomFormFragment_to_roomPreviewFragment"
+            app:destination="@id/roomPreviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomPreviewFragment"
+        android:name="com.example.mobilecomputingproject.ui.room_booking.RoomPreviewFragment"
+        android:label="Preview"
+        tools:layout="@layout/fragment_room_preview" >
+        <action
+            android:id="@+id/action_roomPreviewFragment_to_roomFormFragment"
+            app:destination="@id/roomFormFragment" />
+        <action
+            android:id="@+id/action_roomPreviewFragment_to_roomBookingHomeFragment"
+            app:destination="@id/roomBookingHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrCheckInSucessFragment"
+        android:name="com.example.mobilecomputingproject.ui.qr.QrCheckInSucessFragment"
+        android:label="fragment_qr_checkin_sucess"
+        tools:layout="@layout/fragment_qr_checkin_sucess" >
+        <action
+            android:id="@+id/action_qrCheckInSucessFragment_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+
+
+</navigation>

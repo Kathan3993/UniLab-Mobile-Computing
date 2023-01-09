@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">UniLib</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="LaptopType">
+        <item>MAC</item>
+        <item>PC</item>
+    </string-array>
+
+    <string-array name="Processor">
+        <item>8-core CPU, 7-core GPU</item>
+        <item>8-core CPU, 10-core GPU</item>
+        <item>10-core CPU, 32-core GPU</item>
+    </string-array>
+
+    <string-array name="Storage">
+        <item>256 GB</item>
+        <item>512 GB</item>
+        <item>1 TB</item>
+        <item>2 TB</item>
+    </string-array>
+
+    <string-array name="Model">
+        <item>M1 Air</item>
+        <item>M2 Air</item>
+        <item>M1 Pro</item>
+        <item>M2 Pro</item>
+        <item>M1 Pro max</item>
+    </string-array>
+
+    <string-array name="LoanType">
+        <item>Short-Term</item>
+        <item>Long-Term</item>
+    </string-array>
+
+    <string-array name="Library">
+        <item>Adam</item>
+        <item>McMillan</item>
+    </string-array>
+
+    <string-array name="Province">
+        <item>Nova Scotia</item>
+    </string-array>
+
+    <string-array name="slots">
+        <item>8-9</item>
+        <item>9-10</item>
+        <item>10-11</item>
+        <item>11-12</item>
+        <item>12-13</item>
+        <item>13-14</item>
+        <item>14-15</item>
+        <item>15-16</item>
+        <item>16-17</item>
+        <item>17-18</item>
+        <item>18-19</item>
+        <item>19-20</item>
+    </string-array>
+    <string name="title_activity_register">RegisterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_qr">Scan</string>
+    <string name="more">Home</string>
+    <string name="title_activity_main_navigation">MainActivityNavigation</string>
+    <string name="required">Required</string>
+    <string name="tandc"> 1. You will have 48 hours before you can either cancel or pickup the laptop after which the borrow request will automatically expire.\n\n
+2. UniLib or University are not responsible for any technical issues and any loss of data due to the technical issue that might occur while laptop is in possession of the user. \n\n
+3. A fine of upto $1500 - $2000  will levied upon the user based on the model of the laptop that user has borrowed incase of any technical damage or loss of laptop.\n\n
+4.Laptop must be returned to library on or before the return date. Borrow requests are not automatically renewed and a fine will be levied upon the user if returned after the expiry date.\n\n
+5. Laptops must be used responsibly and for the purpose of education.\n\n\n</string>
+</resources>

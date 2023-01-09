@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.room_booking.RoomPreviewFragment">
+
+    <GridLayout
+        android:rowCount="1"
+        android:columnCount="2"
+        android:background="#EAEBF1"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="35dp"
+            android:text="First Name:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewPreviewFirstNameVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="35dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Last Name:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLastNameVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewPurpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Purpose of Booking:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewPurposeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewParticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Participants:"
+            android:textColor="#0B0A0A"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewParticipantsVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:visibility="gone"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Telephone:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewTelephoneVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="9020992569"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Email:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewEmailVal"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="abc@dal.ca"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Library:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewPhoneLibraryVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Lorem ipsum"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Room Number:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewRoomVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="789"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewBookingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Booking Time:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewBookingTimeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="6-7"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewBookingDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:text="Booking Date:"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/simpleTextViewPreviewBookingDateVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="12/12/2022"
+            android:textColor="#040303"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonPreviewBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:text="Book" />
+
+        <Button
+            android:id="@+id/buttonPreviewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="#878480"
+            android:text="Edit" />
+
+    </GridLayout>
+
+</ScrollView>
